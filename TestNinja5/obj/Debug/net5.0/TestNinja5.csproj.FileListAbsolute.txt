@@ -1,0 +1,12 @@
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\bin\Debug\net5.0\TestNinja5.deps.json
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\bin\Debug\net5.0\TestNinja5.dll
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\bin\Debug\net5.0\ref\TestNinja5.dll
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\bin\Debug\net5.0\TestNinja5.pdb
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.csprojAssemblyReference.cache
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.AssemblyInfoInputs.cache
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.AssemblyInfo.cs
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.csproj.CoreCompileInputs.cache
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.dll
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\ref\TestNinja5.dll
+D:\CodeBase\source-code-starter+(1)\source-code-starter\TestNinja\TestNinja5\obj\Debug\net5.0\TestNinja5.pdb
