@@ -20,6 +20,7 @@ namespace TestNinja.UnitTest
 
             Assert.That(result,Is.EqualTo(3));
             
+            
         }
     }
 }
