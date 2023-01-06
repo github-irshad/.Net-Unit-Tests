@@ -12,15 +12,33 @@ namespace TestNinja.UnitTest
 
     public class MathTests
     {
-        [Test]   
-        public void Add_WhenCalling_ReturnSumOfArgs(){
-            var math = new Math();
+        private Math _math;
 
-            var result = math.Add(1,2);
+        [SetUp]
+        public void SetUp(){
+            _math = new Math();
+        }
 
-            Assert.That(result,Is.EqualTo(3));
+        [Test]
+        [Ignore("Add method Ignored")]   
+        public void Add_WhenCalling_ReturnSumOfArgs(){            
+
+            var result = _math.Add(1,2);
+
+            Assert.That(result,Is.EqualTo(3));        
+        }
+
+        [Test]
+        [TestCase(1,2,2)]
+        [TestCase(2,1,2)]
+        [TestCase(1,1,1)]
+        
+        public void Max_WhenCalled_ReturnGreaterArgs(int a , int b, int expected){
             
-            
+
+            var result = _math.Max(a,b);
+
+            Assert.That(result,Is.EqualTo(expected));
         }
     }
 }
