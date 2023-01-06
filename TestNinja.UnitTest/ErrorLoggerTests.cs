@@ -41,5 +41,15 @@ namespace TestNinja.UnitTest
 
         }
 
+        [Test]
+        public void Log_ValidException_ErrorLogging(){
+            var id = Guid.Empty;
+            errorLogger.ErrorLogged += (sender,args) => {id = args;};
+
+            errorLogger.Log("error");
+
+            Assert.That(id,Is.Not.EqualTo(Guid.Empty));
+        }
+
     }
 }
