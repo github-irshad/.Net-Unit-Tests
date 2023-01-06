@@ -7,27 +7,39 @@ using TestNinja5.Fundamentals;
 
 namespace TestNinja.UnitTest
 {
+
+
     [TestFixture]
     public class ErrorLoggerTests
     {
-        [Test]
-        public void Log_WhenCalled_SetLastErrorProp(){
-            var logger = new ErrorLogger();
-            logger.Log("error");
+        private ErrorLogger errorLogger;
 
-            Assert.That(logger.LastError,Is.EqualTo("error"));
+        [SetUp]
+        public void SetUp()
+        {
+            errorLogger = new ErrorLogger();
+        }
+
+        [Test]
+        public void Log_WhenCalled_SetLastErrorProp()
+        {
+           
+            errorLogger.Log("error");
+
+            Assert.That(errorLogger.LastError, Is.EqualTo("error"));
         }
 
         [Test]
         [TestCase("")]
         [TestCase(null)]
         [TestCase(" ")]
-        public void Log_InvalidInput_ExcceptionThrows(string error){
-            var logger = new ErrorLogger();
+        public void Log_InvalidInput_ExcceptionThrows(string error)
+        {
+            
 
-            Assert.That(() => logger.Log(error),Throws.ArgumentNullException);
+            Assert.That(() => errorLogger.Log(error), Throws.ArgumentNullException);
 
         }
-        
+
     }
 }
