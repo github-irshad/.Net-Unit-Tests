@@ -17,6 +17,17 @@ namespace TestNinja.UnitTest
 
             Assert.That(logger.LastError,Is.EqualTo("error"));
         }
+
+        [Test]
+        [TestCase("")]
+        [TestCase(null)]
+        [TestCase(" ")]
+        public void Log_InvalidInput_ExcceptionThrows(string error){
+            var logger = new ErrorLogger();
+
+            Assert.That(() => logger.Log(error),Throws.ArgumentNullException);
+
+        }
         
     }
 }
